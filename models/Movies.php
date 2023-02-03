@@ -19,4 +19,17 @@ class Movies {
   public function GetTitle(){
     return $this->title;
   }
+  public function GetYear(){
+    return $this->year;
+  }
+  public function GetGenre(){
+    return $this->genre;
+  }
+  public function GetDirector(){
+    return $this->director;
+  }
+
+  public function toString() {
+    return $this->GetTitle() .' - '. $this->GetYear() .' - '. $this->GetGenre() .' - '. $this->GetDirector();
+}
 }
